@@ -1,0 +1,68 @@
+#N canvas 318 182 945 454 10;
+#X floatatom 45 20 5 0 0 0 - - -;
+#X obj 8 107 moses \$1;
+#X obj 8 19 inlet;
+#X obj 90 428 outlet;
+#X obj 102 19 inlet;
+#X floatatom 145 398 5 0 0 0 - - -;
+#X obj -139 19 loadbang;
+#X floatatom 63 107 5 0 0 0 - - -;
+#X obj -139 72 hradio 15 1 0 3 empty empty 0__1__2 0 25 0 10 -262144
+-1 -1 0;
+#X obj 226 270 once;
+#X floatatom 257 271 5 0 0 0 - - -;
+#X obj 247 249 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 153 299 once;
+#X floatatom 184 300 5 0 0 0 - - -;
+#X text 266 211 (re)enable [once];
+#X obj 269 228 r switch;
+#X obj -165 108 s switch;
+#X obj 38 377 r switch;
+#X text -168 125 choose the detection algorithm;
+#X text 100 2 Upper threshold;
+#X obj 316 18 inlet;
+#X obj 90 397 switch 2;
+#X obj 198 18 inlet;
+#X text 196 1 Lower threshold;
+#X floatatom 208 110 5 0 0 0 - - -;
+#X obj 153 109 moses \$2;
+#X obj -139 44 f \$3;
+#X obj 2 271 _uponly_smooth \$4;
+#X text 150 316 autoreset the previous [once] when downcrossing lower
+threshold;
+#X text 314 1 Smoothing (samples);
+#X text 409 68 INLETS: \; 1- Force signal (10 bits resolution: 0-1023)
+\; 2- Upper threshold for force detection \; 3- Lower threshold \;
+4- Smoothing in samples (only applies to algorithm 1) \; OUTLET: 1-
+Force value \; \; CREATION PARAMETERS: \; 1- Default upper threshold
+\; 2- Default lower threshold \; 3- Detection ALGORITHM: 1 = a continuous
+increasing (smoothed) stream of force data is sent to output \, 2 =
+If the input downcrosses the lower threshold \, and then upcrosses
+the upper threshold \, this is sent to output \; 4- Default smoothing
+in samples (only applies to algorithm 1) \;;
+#X connect 1 1 7 0;
+#X connect 1 1 9 0;
+#X connect 1 1 27 0;
+#X connect 2 0 0 0;
+#X connect 2 0 1 0;
+#X connect 2 0 25 0;
+#X connect 4 0 1 1;
+#X connect 6 0 26 0;
+#X connect 8 0 16 0;
+#X connect 9 0 10 0;
+#X connect 9 0 12 1;
+#X connect 9 0 21 2;
+#X connect 11 0 9 1;
+#X connect 12 0 13 0;
+#X connect 12 0 11 0;
+#X connect 15 0 11 0;
+#X connect 17 0 21 0;
+#X connect 20 0 27 1;
+#X connect 21 0 5 0;
+#X connect 21 0 3 0;
+#X connect 22 0 25 1;
+#X connect 25 0 12 0;
+#X connect 25 1 24 0;
+#X connect 26 0 8 0;
+#X connect 27 0 21 1;

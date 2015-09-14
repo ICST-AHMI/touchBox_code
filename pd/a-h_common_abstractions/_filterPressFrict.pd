@@ -1,0 +1,29 @@
+#N canvas 804 246 669 644 10;
+#X floatatom 47 57 5 0 0 0 - - -;
+#X obj 10 166 moses \$1;
+#X obj 10 56 inlet;
+#X obj 55 493 outlet;
+#X obj 55 106 inlet;
+#X floatatom 65 167 5 0 0 0 - - -;
+#X text 53 89 Upper threshold;
+#X floatatom 65 128 5 0 0 0 - - -;
+#X obj -68 -5 vsl 15 128 0 1023 0 0 empty empty simulate_input_data
+-40 -9 0 10 -262144 -1 -1 0 1;
+#X floatatom -50 109 5 0 0 0 - - -;
+#X text -109 -127 INFO: pressure/force data filtering algorithm \,
+meant to be used with FSR or similar sensors.;
+#X text 198 -2 INIT VALUES \; \$1 upper threshold \;;
+#X text 198 -70 ALGORITHM: When upcrossing the upper threshold (1st
+parameter) \, a data stream is passed through (i.e. filtering out low
+force events).;
+#X msg 10 198 0;
+#X connect 1 0 13 0;
+#X connect 1 1 5 0;
+#X connect 2 0 0 0;
+#X connect 2 0 1 0;
+#X connect 4 0 1 1;
+#X connect 4 0 7 0;
+#X connect 5 0 3 0;
+#X connect 8 0 9 0;
+#X connect 9 0 1 0;
+#X connect 13 0 5 0;

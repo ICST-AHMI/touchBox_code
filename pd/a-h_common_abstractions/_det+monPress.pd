@@ -1,0 +1,49 @@
+#N canvas 339 50 484 392 10;
+#X obj 161 134 vsl 15 100 0 1023 0 0 empty empty pressure -5 -10 0
+10 -4160 -262144 -4160 0 1;
+#X floatatom 125 144 5 0 0 0 - - -;
+#X obj 142 43 inlet;
+#X obj 50 43 inlet;
+#X text 34 28 from sensor;
+#X floatatom 142 66 5 0 0 0 - - -;
+#X text 140 26 upper thr;
+#X obj 180 133 vsl 15 100 0 1023 0 0 empty empty empty -5 -10 0 10
+-262144 -1 -1 5806 1;
+#X obj 74 316 + 1.01;
+#X obj 74 292 / 120;
+#X floatatom 125 221 5 0 0 0 - - -;
+#X obj 354 70 inlet;
+#X floatatom 354 91 5 0 0 0 - - -;
+#X obj 202 44 inlet;
+#X text 200 27 Lower threshold;
+#X floatatom 202 66 5 0 0 0 - - -;
+#X obj 295 71 inlet;
+#X floatatom 296 92 5 0 0 0 - - -;
+#X text 259 53 Duration (ms);
+#X text 351 53 Smoothing (samples);
+#X obj 202 133 vsl 15 100 0 1023 0 0 empty empty empty -5 -10 0 10
+-262144 -1 -1 3871 1;
+#X obj 72 352 outlet;
+#X text 122 205 out;
+#X text 122 127 in;
+#X text 125 300 10 bit values are assumed (0-1023) and converted approximately
+to the range 1-10;
+#X obj 50 264 _filterPress 600 400 400 16;
+#X connect 2 0 5 0;
+#X connect 3 0 0 0;
+#X connect 3 0 1 0;
+#X connect 3 0 25 0;
+#X connect 5 0 7 0;
+#X connect 5 0 25 1;
+#X connect 8 0 10 0;
+#X connect 8 0 21 0;
+#X connect 9 0 8 0;
+#X connect 11 0 12 0;
+#X connect 12 0 25 4;
+#X connect 13 0 15 0;
+#X connect 15 0 20 0;
+#X connect 15 0 25 2;
+#X connect 16 0 17 0;
+#X connect 17 0 25 3;
+#X connect 25 0 9 0;
+#X coords 0 -1 1 1 100 140 1 120 100;

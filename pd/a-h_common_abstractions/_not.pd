@@ -1,0 +1,13 @@
+#N canvas 0 22 450 300 10;
+#X msg 151 109 1;
+#X msg 183 109 0;
+#X obj 151 84 sel 0;
+#X obj 152 55 inlet;
+#X obj 155 171 outlet;
+#X floatatom 155 145 5 0 0 0 - - -;
+#X connect 0 0 5 0;
+#X connect 1 0 5 0;
+#X connect 2 0 0 0;
+#X connect 2 1 1 0;
+#X connect 3 0 2 0;
+#X connect 5 0 4 0;

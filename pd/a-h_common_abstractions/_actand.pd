@@ -1,0 +1,14 @@
+#N canvas 154 125 258 204 12;
+#X obj 35 20 inlet;
+#X obj 81 20 inlet;
+#X obj 81 44 t b f;
+#X obj 35 135 outlet;
+#X obj 35 81 f \$2;
+#X text 8 -1 logical 'and' with 2 active inlets;
+#X obj 35 109 && \$1;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 2 1 6 1;
+#X connect 4 0 6 0;
+#X connect 6 0 3 0;

@@ -1,0 +1,11 @@
+#N canvas 284 121 358 168 10;
+#X obj 17 118 *;
+#X obj 17 6 inlet;
+#X obj 17 142 outlet;
+#X text 60 5 float passes through only if values are growing \; zero
+otherwise;
+#X obj 40 46 _incr;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 1 0 4 0;
+#X connect 4 0 0 1;

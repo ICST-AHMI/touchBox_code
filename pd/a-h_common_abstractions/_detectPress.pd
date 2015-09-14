@@ -1,0 +1,64 @@
+#N canvas 671 119 606 467 10;
+#X floatatom 45 20 5 0 0 0 - - -;
+#X obj 8 102 moses \$1;
+#X obj 8 19 inlet;
+#X obj 53 429 outlet;
+#X obj 102 19 inlet;
+#X floatatom 63 103 5 0 0 0 - - -;
+#X obj 86 184 once;
+#X obj 107 163 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 154 128 once;
+#X text 100 2 Upper threshold;
+#X obj 429 20 inlet;
+#X obj 199 19 inlet;
+#X text 197 2 Lower threshold;
+#X floatatom 209 105 5 0 0 0 - - -;
+#X obj 154 104 moses \$2;
+#X obj 53 358 _uponly_smooth \$4;
+#X text 413 3 Smoothing (samples);
+#X floatatom 112 41 5 0 0 0 - - -;
+#X floatatom 210 42 5 0 0 0 - - -;
+#X floatatom 438 41 5 0 0 0 - - -;
+#X obj 104 270 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 53 330 spigot;
+#X obj 86 306 tgl 15 0 empty empty empty 17 7 0 10 -262144 -258113
+-258113 0 1;
+#X obj 86 208 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 247 104 reset the other [once] when downcrossing lower threshold
+;
+#X text 118 184 reset the previous [once] when upcrossing upper threshold
+;
+#X obj 329 19 inlet;
+#X floatatom 338 40 5 0 0 0 - - -;
+#X text 318 2 Delay (ms);
+#X obj 104 245 delay \$3;
+#X connect 1 1 5 0;
+#X connect 1 1 21 0;
+#X connect 1 1 6 0;
+#X connect 2 0 0 0;
+#X connect 2 0 1 0;
+#X connect 2 0 14 0;
+#X connect 4 0 1 1;
+#X connect 4 0 17 0;
+#X connect 6 0 8 1;
+#X connect 6 0 23 0;
+#X connect 7 0 6 1;
+#X connect 8 0 7 0;
+#X connect 10 0 15 1;
+#X connect 10 0 19 0;
+#X connect 11 0 14 1;
+#X connect 11 0 18 0;
+#X connect 14 0 8 0;
+#X connect 14 1 13 0;
+#X connect 15 0 3 0;
+#X connect 20 0 22 0;
+#X connect 21 0 15 0;
+#X connect 22 0 21 1;
+#X connect 23 0 22 0;
+#X connect 23 0 29 0;
+#X connect 26 0 27 0;
+#X connect 26 0 29 1;
+#X connect 29 0 20 0;

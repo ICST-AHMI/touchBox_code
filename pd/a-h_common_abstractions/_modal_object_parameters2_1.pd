@@ -1,0 +1,76 @@
+#N canvas 77 301 942 424 10;
+#X obj 160 176 t b l;
+#X obj 201 113 t b f;
+#X obj 68 56 t b f;
+#X obj 339 176 t b l;
+#X obj 394 113 t b f;
+#X obj 339 60 dbtorms;
+#X obj 394 60 dbtorms;
+#X obj 339 113 t b f;
+#X obj 109 56 t b f;
+#X obj 68 5 inlet;
+#X obj 109 5 inlet;
+#X obj 160 5 inlet;
+#X obj 201 5 inlet;
+#X obj 246 176 t b l;
+#X obj 287 113 t b f;
+#X obj 246 5 inlet;
+#X obj 287 5 inlet;
+#X obj 339 5 inlet;
+#X obj 394 5 inlet;
+#X obj 27 388 outlet;
+#X obj 190 388 outlet;
+#X obj 276 388 outlet;
+#X obj 369 388 outlet;
+#X obj 27 5 inlet;
+#X obj 27 333 pack 1 1 1;
+#X obj 160 149 pack \$1 \$2;
+#X obj 246 149 pack \$3 \$4;
+#X obj 339 149 pack 0 \$5 \$6;
+#X obj 438 5 inlet;
+#X text 444 24 *;
+#X text 503 332 * At these inlets an additional factor for the levels
+can be set. This is useful e.g. to invert the phase of a mode at a
+pickup-point (by setting a factor of -1) or to statistically vary the
+level within a range given at the previous inlet.;
+#X obj 394 88 _actx 1;
+#X text 504 204 This subpatch packs the parameters for a modal object
+of two modes \, with one interaction points \, in appropriate lists
+and assures immediate actualisation through right-ordered retriggering.
+Static parameter values can be given as creation arguments (except
+for the base factors \, which are set to 1 by default).;
+#X connect 0 0 24 0;
+#X connect 0 1 20 0;
+#X connect 1 0 25 0;
+#X connect 1 1 25 1;
+#X connect 2 0 24 0;
+#X connect 2 1 24 1;
+#X connect 3 0 24 0;
+#X connect 3 1 22 0;
+#X connect 4 0 27 0;
+#X connect 4 1 27 2;
+#X connect 5 0 7 0;
+#X connect 6 0 31 0;
+#X connect 7 0 27 0;
+#X connect 7 1 27 1;
+#X connect 8 0 24 0;
+#X connect 8 1 24 2;
+#X connect 9 0 2 0;
+#X connect 10 0 8 0;
+#X connect 11 0 25 0;
+#X connect 12 0 1 0;
+#X connect 13 0 24 0;
+#X connect 13 1 21 0;
+#X connect 14 0 26 0;
+#X connect 14 1 26 1;
+#X connect 15 0 26 0;
+#X connect 16 0 14 0;
+#X connect 17 0 5 0;
+#X connect 18 0 6 0;
+#X connect 23 0 24 0;
+#X connect 24 0 19 0;
+#X connect 25 0 0 0;
+#X connect 26 0 13 0;
+#X connect 27 0 3 0;
+#X connect 28 0 31 1;
+#X connect 31 0 4 0;
