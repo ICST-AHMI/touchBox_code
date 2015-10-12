@@ -5,13 +5,9 @@
 			"1" : 			{
 				"id" : 1,
 				"data" : 				{
-					"op_threshold" : [ 0.38 ],
-					"pressureThreshold" : [ 90 ],
+					"op_threshold" : [ 0.22 ],
 					"showWindow" : [ 1 ],
-					"videoLatency" : [ 8 ],
-					"videoLatency[1]" : [ 285 ],
-					"patcher::drawMask::mousedrawing::mask" : [ "paintpoly", 210, 20, 1088, 20, 1078, 771, 205, 760 ],
-					"patcher[1]::weighMapper" : [ 1024.0, 0.0, 5000.0, 0.0, 0.0, 0, 1.0, 20.0, 0, 7.0, 50.0, 0, 19.0, 100.0, 0, 40.0, 200.0, 0, 107.0, 500.0, 0, 218.0, 1000.0, 0, 440.0, 2000.0, 0, 1024.0, 5000.0, 0, "linear" ]
+					"patcher::drawMask::mousedrawing::mask" : [ "paintpoly", 1088, 15, 1083, 739, 228, 718, 228, 20 ]
 				}
 
 			}
