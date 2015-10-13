@@ -1,8 +1,0 @@
-#N canvas 393 190 450 300 10;
-#X obj 100 100 cnv 15 250 80 empty empty Sound_Design_Toolkit 10 12
-1 14 -260097 -262144 0;
-#X text 101 150 project CLOSED - http://closed.ircam.fr;
-#X text 101 162 project NIW - http://www.niwproject.eu;
-#X text 101 138 project SOb - http://www.soundobject.org;
-#X text 107 119 (C) 2001-2013;
-#X coords 0 -1 1 1 250 80 2 100 100;
