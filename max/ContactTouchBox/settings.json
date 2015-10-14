@@ -5,9 +5,9 @@
 			"1" : 			{
 				"id" : 1,
 				"data" : 				{
-					"op_threshold" : [ 0.22 ],
+					"op_threshold" : [ 0.2 ],
 					"showWindow" : [ 1 ],
-					"patcher::drawMask::mousedrawing::mask" : [ "paintpoly", 1088, 15, 1083, 739, 228, 718, 228, 20 ]
+					"patcher::drawMask::mousedrawing::mask" : [ "paintpoly", 1092, 713, 224, 708, 224, 31, 1092, 26 ]
 				}
 
 			}
