@@ -7,7 +7,7 @@
 				"data" : 				{
 					"op_threshold" : [ 0.2 ],
 					"showWindow" : [ 1 ],
-					"patcher::drawMask::mousedrawing::mask" : [ "paintpoly", 1092, 713, 224, 708, 224, 31, 1092, 26 ]
+					"patcher::drawMask::mousedrawing::mask" : [ "paintpoly", 169, 15, 173, 765, 1092, 776, 1106, 20 ]
 				}
 
 			}

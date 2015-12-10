@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 274.0, 82.0, 1110.0, 784.0 ],
+		"rect" : [ 487.0, 78.0, 1110.0, 784.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,74 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 314.217834, 662.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "calibrated with 800g"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-96",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 399.0, 733.941956, 30.0, 22.0 ],
+					"style" : "",
+					"text" : "t b l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-95",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 399.0, 701.831421, 124.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend /areaStream"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 9.0,
+					"id" : "obj-80",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "OSCTimeTag" ],
+					"patching_rect" : [ 399.0, 766.066162, 88.0, 19.0 ],
+					"style" : "",
+					"text" : "OpenSoundControl"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-87",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 399.0, 790.337891, 144.0, 22.0 ],
+					"style" : "",
+					"text" : "udpsend localhost 61654"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -972,7 +1040,7 @@
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 228.0, 669.875793, 69.0, 22.0 ],
 					"style" : "",
-					"text" : "* 0.001333"
+					"text" : "* 0.001088"
 				}
 
 			}
@@ -1009,7 +1077,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 725.0, 92.0, 504.0, 489.0 ],
+						"rect" : [ 935.0, 349.0, 504.0, 489.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1161,7 +1229,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 70.0, 105.0, 594.0, 581.0 ],
+										"rect" : [ 474.0, 366.0, 594.0, 581.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1319,7 +1387,7 @@
 															"modernui" : 1
 														}
 ,
-														"rect" : [ 116.0, 208.0, 906.0, 674.0 ],
+														"rect" : [ 497.0, 199.0, 906.0, 674.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -1399,12 +1467,12 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 554.0, 111.0, 58.0, 22.0 ],
 																	"restore" : 																	{
-																		"mask" : [ "paintpoly", 1092, 713, 224, 708, 224, 31, 1092, 26 ]
+																		"mask" : [ "paintpoly", 187, 41, 182, 786, 1097, 771, 1110, 41 ]
 																	}
 ,
 																	"style" : "",
 																	"text" : "autopattr",
-																	"varname" : "u397000475"
+																	"varname" : "u922000476"
 																}
 
 															}
@@ -1436,7 +1504,7 @@
 																	"parameter_enable" : 0,
 																	"patching_rect" : [ 66.0, 540.0, 91.0, 30.0 ],
 																	"style" : "",
-																	"text" : "paintpoly 1092 713 224 708 224 31 1092 26",
+																	"text" : "paintpoly 187 41 182 786 1097 771 1110 41",
 																	"varname" : "mask"
 																}
 
@@ -1935,7 +2003,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 227.0, 540.0, 599.0, 22.0 ],
 																	"style" : "",
-																	"text" : "1092 713 224 708 224 31 1092 26"
+																	"text" : "187 41 182 786 1097 771 1110 41"
 																}
 
 															}
@@ -3167,7 +3235,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u265000476"
+					"varname" : "u901000477"
 				}
 
 			}
@@ -4342,7 +4410,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-60", 1 ],
+					"destination" : [ "obj-95", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-25", 0 ]
@@ -4381,6 +4449,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-60", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-30", 0 ]
@@ -4811,6 +4888,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-80", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-108", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4917,10 +5003,37 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-96", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-95", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-96", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-96", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "settings.json",
-				"bootpath" : "/Users/Shared/AHMI/01_projects/touchBox/code/max/ContactTouchBox",
+				"bootpath" : "/Users/Shared/AHMI/02_experiments/touchBox/exp-4c",
 				"type" : "JSON",
 				"implicit" : 1
 			}
